@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -55,14 +56,14 @@ public class ActivityFragment extends Fragment {
 
     private static final int REQUEST_PHOTO= 0;
 
-   // Spinner activityType = (Spinner) findViewById(R.id.activityType);
-    // Create an ArrayAdapter using the string array and a default spinner layout
-   // ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-    //    R.array.activityType, android.R.layout.simple_spinner_item);
-    // Specify the layout to use when the list of choices appears
-   // adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-    // Apply the adapter to the spinner
-    //activityType.setAdapter(adapter);
+//   Spinner activityType = (Spinner) findViewById(R.id.activityType);
+//    // Create an ArrayAdapter using the string array and a default spinner layout
+//   ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+//        R.array.activityType, android.R.layout.simple_spinner_item);
+//    // Specify the layout to use when the list of choices appears
+//    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//    // Apply the adapter to the spinner
+//    activityType.setAdapter(adapter);
 
     public static ActivityFragment newInstance(UUID activityId){
         Bundle args = new Bundle();
@@ -85,7 +86,6 @@ public class ActivityFragment extends Fragment {
     @Override
     public void onPause(){
         super.onPause();
-
         ActivityLab.get(getActivity()).updateActivity(mActivity);
     }
 
@@ -193,6 +193,7 @@ public class ActivityFragment extends Fragment {
 
         mPhotoView = (ImageView) v.findViewById(R.id.activity_photo);
        // updatePhotoView();
+
 
         if(ARG_ACTIVITY_ID != null){
            return v;

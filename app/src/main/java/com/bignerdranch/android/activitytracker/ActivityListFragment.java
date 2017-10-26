@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -80,10 +81,12 @@ public class ActivityListFragment extends Fragment {
 
             //code for opening settings page
             case R.id.menu_item_settings:
-                //Activity activity = new Activity();
-                //ActivityLab.get(getSettings()).addActivity(activity);
-                //Intent intent2 = SettingsPage.newIntent(getSettings(), activity.getId());
-                //startActivity(intent2);
+                Activity settingsActivity = new Activity();
+                SettingsPage.get(getActivity()).addActivity(settingsActivity);
+                Intent settingsintent = SettingsPagerActivity.newIntent(getActivity(), settingsActivity.getId());
+                Log.d("my error", "i am here3");
+                startActivity(settingsintent);
+                Log.d("my error", "i am here4");
             return true;
 
             default:
@@ -130,6 +133,7 @@ public class ActivityListFragment extends Fragment {
             mTitleTextView.setText(mActivity.getTitle());
             mLocationTextView.setText(mActivity.getLocation());
             mDateTextView.setText(mActivity.getDate().toString());
+            //updateUI();
         }
 
         public ActivityHolder(View itemView){

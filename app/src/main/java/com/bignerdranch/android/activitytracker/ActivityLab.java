@@ -73,7 +73,7 @@ public class ActivityLab {
 
     }
 
-    public Activity getSettings(UUID id){
+    public Activity getSetting(UUID id){
         ActivityCursorWrapper cursor = queryActivities(
                 UserInfoTable.Cols.UUID + " = ?",
                 new String[] {id.toString()}
