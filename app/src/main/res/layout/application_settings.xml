@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText android:id="@+id/settings_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:hint="@string/settings_name_hint"
+        />
+    <EditText android:id="@+id/settings_id"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:hint="@string/settings_id_hint"
+        />
+    <EditText android:id="@+id/settings_email"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:hint="@string/settings_email_hint"
+        />
+    <EditText android:id="@+id/settings_gender"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:hint="@string/settings_gender_hint"
+        />
+    <EditText android:id="@+id/settings_comment"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="16dp"
+              android:layout_marginRight="16dp"
+              android:hint="@string/settings_comments_hint"
+        />
+</LinearLayout>

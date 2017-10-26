@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ActivityTracker</string>
+    <string name="activity_title_hint">Enter a title for the activity</string>
+    <string name="activity_location_hint">Enter the location of the activity</string>
+    <string name="activity_title_label">Activity Title</string>
+    <string name="activity_location_label">Activity Location</string>
+    <string name="activity_date_label">Date</string>
+    <string name="activity_gps_label">GPS Location</string>
+    <string name="new_activity">New Activity</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$s activities</string>
+    <string name="activity_type_label">Type of Activity</string>
+    <string name="activity_type_hint">Choose the type of Activity</string>
+    <string name="activity_comment_label">Comments</string>
+    <string name="activity_duration_label">Length of Activity</string>
+
+
+    <string name="settings_name_hint">Name</string>
+    <string name="settings_id_hint">ID</string>
+    <string name="settings_email_hint">Email</string>
+    <string name="settings_gender_hint">Gender</string>
+    <string name="settings_comments_hint">Comments</string>
+
+    <string name="save_activity">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_activity">Delete</string>
+    <string name="show_on_map">Show Map</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+
+</resources>
